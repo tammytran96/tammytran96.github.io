@@ -1,0 +1,88 @@
+body {
+    background-color: #f8f2ed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #51381a;
+}
+
+a {
+    color: #51381a;
+  }
+
+.navigation {
+    background-color: #c2a181;
+    text-align: center;
+    padding: 10px;
+}
+
+.name {
+    /* border: 2px solid #b0c0bc; */
+    width: 700px;
+    height: 600px;
+    padding: 175px 0;
+    text-align: center;
+}
+
+.name-tech, .aboutme, .contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.tech {
+    /* display: flex;
+    flex-direction: row; */
+    /* width: 300px;
+    height: 300px; */
+    align-items: center;
+    padding: 10px;
+}
+
+.tech-stack {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+  }
+
+.page-header {
+    padding: 10px;
+    background-color: #b0c0bc;
+    text-align: center; 
+    font-weight: bold;
+}
+
+.projects {
+    border: 2px solid #b0c0bc;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.bio {
+    border: 2px solid #b0c0bc;
+    width: 600px;
+    height: 500px;
+    padding: 10px;
+    text-align: center; 
+}
+
+.photo {
+    border: 2px solid #b0c0bc;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #ebd4cb;
+    text-align: center;
+    color: #51381a;
+}
