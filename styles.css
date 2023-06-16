@@ -18,36 +18,33 @@ a {
     padding: 10px;
 }
 
-.name {
-    /* border: 2px solid #b0c0bc; */
-    width: 700px;
-    height: 600px;
-    padding: 175px 0;
+.home {
+    width: 100%;
+    padding: 145px 0;
     text-align: center;
 }
 
-.name-tech, .contact-section {
+.contact-section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .tech {
-    /* display: flex;
-    flex-direction: row; */
-    /* width: 300px;
-    height: 300px; */
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
     padding: 10px;
 }
 
 .tech-stack {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
     text-align: center;
+    width: 100px;
+    padding: 10px;
   }
 
 .page-header {
