@@ -26,7 +26,7 @@ a {
     text-align: center;
 }
 
-.name-tech, .aboutme, .contact-section {
+.name-tech, .contact-section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -65,8 +65,15 @@ a {
     text-align: center;
 }
 
+.aboutme{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+}
+
 .bio {
-    border: 2px solid #b0c0bc;
     width: 600px;
     height: 500px;
     padding: 10px;
@@ -74,9 +81,7 @@ a {
 }
 
 .photo {
-    border: 2px solid #b0c0bc;
-    width: 400px;
-    height: 400px;
+    width: 300px;
     padding: 10px;
     text-align: center;
 }
@@ -85,4 +90,6 @@ footer {
     background-color: #ebd4cb;
     text-align: center;
     color: #51381a;
+    bottom: 0;
+    width: 100%;
 }
