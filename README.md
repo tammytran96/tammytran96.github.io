@@ -1,6 +1,4 @@
-# Portfolio-1
-
-## Temp Portfolio with HTML&CSS
+# Temp Portfolio with made with HTML & CSS
 
 Feel free to visit my portfolio via the link below:
 
