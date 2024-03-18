@@ -1,0 +1,48 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+}
+
+.home-main {
+  flex-grow: 1; /* Main content takes up remaining space */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: #fdca7e;
+  background-image: url('/public/portfoliobg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.home-content-wrapper {
+  text-align: center;
+  /* background-color: #f8ebd7; light checkered color */
+  background-color: #f8ebd7d2;
+  padding: 20px;
+}
+
+.home-text-title {
+  font-size: 2.25rem;
+  /* color: #c2b59b; dark checkered color */
+  color: #f2a812;
+  font-family: 'Space Mono';
+}
+
+.home-text-description {
+  font-size: 1rem;
+  color: #088008;
+  font-family: 'Space Mono';
+}
+
+/* Media Queries for Responsive Design; EDIT LATER */
+@media (max-width: 768px) {
+  .home-main {
+    padding: 20px; /* Add padding to the main content on smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
