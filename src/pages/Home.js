@@ -1,10 +1,12 @@
 import React from 'react';
 import '../styles.css';
+import Navigation from '../components/Navigation';
 
 const Home = () => {
   return (
-    <>
+    <div id="home" className="section">
       <div className="home-container">
+      <Navigation />
         <main className="home-main">
           <div className="home-content-wrapper">
             <h1 className="home-text-title">
@@ -17,7 +19,7 @@ const Home = () => {
           </div>
         </main>
       </div>
-    </>
+    </div>
   );
 };
 

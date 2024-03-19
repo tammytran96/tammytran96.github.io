@@ -1,7 +1,12 @@
+/* Home Styling */
 .home-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensures the container takes up the full viewport height */
+  background-image: url('/public/portfoliobg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .home-main {
@@ -9,11 +14,6 @@
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-  background-color: #fdca7e;
-  background-image: url('/public/portfoliobg.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 .home-content-wrapper {
@@ -36,7 +36,42 @@
   font-family: 'Space Mono';
 }
 
-/* Media Queries for Responsive Design; EDIT LATER */
+/* Navigation Styling */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Align left and right containers at opposite ends */
+  padding: 3px 20px;
+  background-color: #f8ebd7d2;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+}
+
+.nav-link {
+  margin-right: 20px; /* Adjust spacing between links */
+  font-family: 'Space Mono';
+  font-size: 1rem;
+  color: #088008;
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+  color: #f2a812;
+}
+
+.icon {
+  color: #f2a812;
+  font-size: 1rem;
+}
+
+.icon:hover {
+  color: #088008;
+}
+
+
+/* Media Queries for Responsive Design */
+/* Home */
 @media (max-width: 768px) {
   .home-main {
     padding: 20px; /* Add padding to the main content on smaller screens */
@@ -44,5 +79,16 @@
 
   h1 {
     font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Navigation */
+@media (max-width: 768px) {
+  .nav-container {
+      flex-direction: column; /* Stack items vertically on mobile */
+  }
+
+  .nav-right, .nav-left {
+      margin-top: 10px; /* Add spacing between left and right links on mobile */
   }
 }
