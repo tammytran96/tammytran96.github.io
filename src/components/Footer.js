@@ -1,10 +1,13 @@
 import React from 'react';
+import '../styles.css'
 
 const Footer = () => {
   return (
-    <>
-      <p>Tammy Tran</p>
-    </>
+    <div className="footer-container">
+      <div className="footer-content">
+        <p>Tammy Tran Portfolio</p>
+      </div>
+    </div>
   );
 };
 
