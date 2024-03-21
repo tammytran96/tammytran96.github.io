@@ -230,3 +230,27 @@
     font-size: 0.9rem;
   }
 }
+
+/* Scroll To Top Button */
+.scroll-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c2b59b;
+  color: #f8ebd7;
+  border: none;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top-button.visible {
+  display: block;
+}
+
+.scroll-to-top-button span {
+  font-size: 15px;
+}
