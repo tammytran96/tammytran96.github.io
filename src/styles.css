@@ -21,6 +21,7 @@
   /* background-color: #f8ebd7; light checkered color */
   background-color: #f8ebd7d2;
   padding: 20px;
+  border-radius: 5px;
 }
 
 .home-text-title {
@@ -36,7 +37,79 @@
   font-family: 'Space Mono';
 }
 
-/* Navigation Styling */
+/* About Me Button */
+.about-me-button {
+  background-color: #f8ebd7;
+  color: #544f44;
+  font-family: 'Space Mono';
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: 2px solid #088008;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.about-me-button:hover {
+  background-color: #088008;
+  color: #f8ebd7;
+  border-color: #088008;
+}
+
+/* About Me Modal */
+.ReactModal__Content {
+  background-color: #f8ebd7 !important; 
+  border: none !important;
+  padding: 20px !important;
+  width: 40%;
+  height: 50%;
+  max-width: 800px;
+  margin: 0 auto;
+  top: 20% !important; /* Position of the modal box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #544f44;
+  font-family: 'Space Mono', monospace;
+  border-radius: 8px !important;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.about-me-title {
+  font-size: 1.25rem;
+}
+
+.about-me-description {
+  font-size: 1rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+/* Navigation */
 .nav-container {
   position: fixed;
   top: 0;
@@ -59,6 +132,7 @@
   font-size: 1rem;
   color: #088008;
   text-decoration: none; /* Remove underline */
+  cursor: pointer;
 }
 
 .nav-link:hover {
@@ -167,6 +241,30 @@
   font-weight: 600;
 }
 
+/* Scroll To Top Button */
+.scroll-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c2b59b;
+  color: #f8ebd7;
+  border: none;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top-button.visible {
+  display: block;
+}
+
+.scroll-to-top-button span {
+  font-size: 15px;
+}
+
 
 /* Media Queries for Responsive Design */
 /* Home */
@@ -180,6 +278,22 @@
   }
 
   .home-text-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* About */
+@media screen and (max-width: 768px) {
+  .ReactModal__Content {
+    width: 75%;
+    max-width: none;
+  }
+
+  .about-me-title {
+    font-size: 1rem;
+  }
+  
+  .about-me-description {
     font-size: 0.9rem;
   }
 }
@@ -229,28 +343,4 @@
   .contact-text-description {
     font-size: 0.9rem;
   }
-}
-
-/* Scroll To Top Button */
-.scroll-to-top-button {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #c2b59b;
-  color: #f8ebd7;
-  border: none;
-  /* border-radius: 50%; */
-  cursor: pointer;
-  padding: 10px;
-  z-index: 1000;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.scroll-to-top-button.visible {
-  display: block;
-}
-
-.scroll-to-top-button span {
-  font-size: 15px;
 }
