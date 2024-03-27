@@ -22,8 +22,7 @@ const Home = () => {
               tammyTran = ["developer", "designer"];
             </h1>
             <p className="home-text-description">
-              // full-stack developer who loves to learn and make cool things!
-              Add more later
+              // full-stack developer and designer from California who is passionate about learning, exploring new ideas, and is actively seeking roles that align with my values and expertise. 
             </p>
             <button className="about-me-button" onClick={openModal}>About Me</button>
             <AboutMeModal isOpen={isModalOpen} handleClose={closeModal} />
