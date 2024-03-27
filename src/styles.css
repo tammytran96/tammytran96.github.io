@@ -88,10 +88,18 @@
 
 .modal-content {
   padding: 20px;
+  text-align: center;
 }
 
 .about-me-title {
   font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.about-me-image {
+  width: 500px;
+  height: auto;
+  border-radius: 2%;
 }
 
 .about-me-description {
@@ -339,6 +347,11 @@
 
   .about-me-title {
     font-size: 1rem;
+  }
+
+  .about-me-image {
+    max-width: 100%;
+    height: auto;
   }
   
   .about-me-description {
