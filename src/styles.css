@@ -174,12 +174,25 @@
 
 .experience-content-wrapper {
   text-align: center;
-  background-color: #c2b59b48;
+  /* background-color: #c2b59b48; */
   padding: 20px;
 }
 
 .experience-text-title {
   font-size: 2.25rem;
+  color: #544f44;
+  font-family: 'Space Mono';
+}
+
+.experience-subsection {
+  text-align: center;
+  background-color: #c2b59b48;
+  padding: 20px;
+  bottom: 20px;
+}
+
+.subsection-title {
+  font-size: 2rem;
   color: #544f44;
   font-family: 'Space Mono';
 }
@@ -241,6 +254,8 @@
 .project-gallery-image {
   max-width: 100%;
   height: auto;
+  /* max-width: auto;
+  height: 50px; */
   cursor: pointer;
 }
 
@@ -430,6 +445,10 @@
   .experience-text-description {
     font-size: 0.9rem;
   }
+  
+  .subsection-title {
+    font-size: 1.5rem;
+  }
 }
 
 /* Project Cards */
@@ -441,6 +460,10 @@
 
   .project-card {
     margin-bottom: 20px;
+  }
+
+  .project-title {
+    font-size: 1rem;
   }
 }
 

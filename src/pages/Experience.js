@@ -1,20 +1,21 @@
 import React from 'react';
-import ProjectCard from '../components/ProjectCard';
+import DeveloperProjectCard from '../components/DeveloperProjectCard';
+import DesignProjectCard from '../components/DesignProjectCard';
 import '../styles.css';
 
 const Experience = () => {
-  const projects = [
+  const developerProjects = [
     {
       id: 1,
       title: 'Web Development Internship at TechJoy',
       date: 'July 2023-Dec 2023',
-      imageUrl: '/assets/orff/orff.png',
+      imageUrl: '/assets/developerprojects/orff/orff.png',
       techStack: 'Tech Stack: JavaScript, React, Python, Django, Cypress Testing, Git, GitHub, ZenHub',
       link: 'https://offroadfunfinder.com/signin',
       descriptionImage: [
-        '/assets/orff/orffsignin.png',
-        '/assets/orff/orffmap.png',
-        '/assets/orff/orffsearch.png',
+        '/assets/developerprojects/orff/orffsignin.png',
+        '/assets/developerprojects/orff/orffmap.png',
+        '/assets/developerprojects/orff/orffsearch.png',
       ],
       description: (
         <div className='project-description'>
@@ -46,12 +47,12 @@ const Experience = () => {
       id: 2,
       title: 'Software Engineering Internship at Drata',
       date: 'May 2023-June 2023',
-      imageUrl: '/assets/drata/drata.png',
+      imageUrl: '/assets/developerprojects/drata/drata.png',
       techStack: 'Tech Stack: TypeScript, JavaScript, MySQL, React, Jest Testing, JSON, AWS, Jira, Git, GitHub, Notion',
       link: 'https://developers.drata.com/docs/',
       descriptionImage: [
-        '/assets/drata/drataapi.png',
-        '/assets/drata/dratadoc.png',
+        '/assets/developerprojects/drata/drataapi.png',
+        '/assets/developerprojects/drata/dratadoc.png',
       ],
       description: (
         <div className='project-description'>
@@ -88,14 +89,14 @@ const Experience = () => {
     },
     {
       id: 3,
-      title: 'Blurred Limes: Full-Stack Web Development Project',
+      title: 'Blurred Limes: Full-Stack Web Dev Project',
       date: 'May 2023',
-      imageUrl: '/assets/blurredlimes/blurredlimes.png',
+      imageUrl: '/assets/developerprojects/blurredlimes/blurredlimes.png',
       techStack: 'Tech Stack: Ruby, JavaScript, HTML, SCSS, React in Rails, PostgreSQL, Git, GitHub, Trello',
       link: 'https://github.com/TRFM-Radio/blurred-limes',
       descriptionImage: [
-        '/assets/blurredlimes/blurredlimescontroller.png',
-        '/assets/blurredlimes/blurredlimeshome.png',
+        '/assets/developerprojects/blurredlimes/blurredlimescontroller.png',
+        '/assets/developerprojects/blurredlimes/blurredlimeshome.png',
       ],
       description: (
         <div className='project-description'>
@@ -126,8 +127,197 @@ const Experience = () => {
     },
   ];
 
+
+  const designProjects = [
+    {
+      id: 1,
+      title: 'Graceful Fleurs Logo',
+      imageUrl: '/assets/designprojects/gf/gflogoblack.png',
+      techStack: 'Software Used: Illustrator | InDesign | Photoshop',
+      descriptionImage: [
+        {
+          imageUrl: '/assets/designprojects/gf/gflogoblack.png',
+          caption: 'Graceful Fleurs logo on black background',
+        },
+        {
+          imageUrl: '/assets/designprojects/gf/gflogowhite.png',
+          caption: 'Graceful Fleurs logo on white background',
+        },
+        {
+          imageUrl: '/assets/designprojects/gf/gfamazon.png',
+          caption: 'Graceful Fleurs Amazon product page',
+        },
+        {
+          imageUrl: '/assets/designprojects/gf/gfmockup.png',
+          caption: 'Product mockup',
+        },
+        {
+          imageUrl: '/assets/designprojects/gf/gfprocess1.png',
+          caption: 'Logo design process',
+        },
+        {
+          imageUrl: '/assets/designprojects/gf/gfprocess2.png',
+          caption: 'Narrowed-down logo designs',
+        },
+      ],
+      description: (
+        <div className='project-description'>
+          <p>
+            This logo design was a pivotal part of a freelance project for Graceful Fleurs, a company specializing in real, preserved roses on Amazon, renowned for their longevity lasting for years. The primary objective was to craft a logo that evokes feelings of romance and luxury, aligning seamlessly with the brand's identity.
+          </p>
+          <p>
+            My design journey commenced with close collaboration with the client, delving deep into their desired aesthetic and brand essence. I curated a comprehensive mood board, capturing elements that resonated with their vision and setting the tone for the design process. Initial sketches and concept exploration in Illustrator helped distill the style direction, leading to the creation of digital prototypes.
+          </p>
+          <p>
+            Feedback loops and iterative revisions were instrumental in refining the chosen design, ensuring it not only met but exceeded the client's expectations. I presented mockups showcasing how the logo would appear on their product, ensuring a harmonious integration with their brand image.
+          </p>
+          <p>
+            The final logo design elegantly incorporates the company name alongside a rose motif intertwined with vines, symbolizing the product's essence. The choice of a reflective gold color adds a touch of luxury and sophistication, aligning perfectly with the brand's positioning.
+          </p>
+          <p>
+            The success of the logo is reflected in the product's performance on Amazon, boasting an impressive rating of over 4.5/5 stars based on more than 400 ratings, a testament to its appeal and resonance with the target audience.
+          </p>
+          <p>
+            Takeaway<br></br>
+            My takeaway from this project underscores the significance of understanding a client's vision and translating it into a compelling visual identity. Collaborating closely with the client allowed me to capture the essence of romance and luxury, key elements of their brand identity, in the logo design. The iterative design process, from mood boards to mockups, emphasized the importance of feedback and refinement in achieving a design that not only met but exceeded the client's expectations.
+          </p>
+          <p>
+            This project also highlighted the impact of effective branding on product success. The logo's seamless integration with the product, coupled with its reflective gold color and elegant motif, resonated strongly with the target audience, as evidenced by the impressive ratings and positive feedback on Amazon.
+          </p>
+          <p>
+            Overall, this experience reaffirmed the power of thoughtful design in creating meaningful connections and driving brand recognition and success.
+          </p>
+        </div>
+      ),
+    },
+    {
+      id: 2,
+      title: 'Genesys MPC Logo',
+      imageUrl: '/assets/designprojects/genesys/genesyslogo.png',
+      techStack: 'Software Used: InDesign | Illustrator | Photoshop',
+      descriptionImage: [
+        {
+          imageUrl: '/assets/designprojects/genesys/genesyslogo.png',
+          caption: 'Genesys final logo',
+        },
+        {
+          imageUrl: '/assets/designprojects/genesys/genesysprocess1.png',
+          caption: 'Curated mood board',
+        },
+        {
+          imageUrl: '/assets/designprojects/genesys/genesysprocess2.png',
+          caption: 'Logo design process in Illustrator',
+        },
+        {
+          imageUrl: '/assets/designprojects/genesys/genesysprocess3.png',
+          caption: 'Final revisions',
+        },
+        {
+          imageUrl: '/assets/designprojects/genesys/genesyscolors.png',
+          caption: 'Genesys brand color palette',
+        },
+      ],
+      description: (
+        <div className='project-description'>
+          <p>
+            This logo design was part of a freelance project for Genesys MPC, a sales and marketing company known for its dynamic work environment that fosters teamwork and continuous self-improvement. The objective was to create a logo that embodies progress, growth, and a goal-oriented mindset.
+          </p>
+          <p>
+            The name "Genesys," akin to "genesis," signifies the origin or beginning of something. Drawing inspiration from this concept, I envisioned a logo that symbolizes growth and potential. A sapling, representing the inception of a plant destined for beauty, seemed fitting to encapsulate the company's essence. Integrating the letter "G" into the design not only establishes a visual connection with the company's name but also emphasizes unity and teamwork.
+          </p>
+          <p>
+            My design process involved close collaboration with the client to grasp their desired vibe and aesthetic preferences. I curated a mood board to capture elements that resonated with their vision. Initial sketches helped narrow down the style direction, leading to the creation of digital prototypes in Illustrator. Feedback and revisions were integral to refining the chosen design, ensuring it aligned with the client's expectations.
+          </p>
+          <p>
+            The color palette was meticulously crafted to complement the logo and reflect the brand's identity. Shades of green, mirroring the leaf's evolving hues in the logo, symbolize the company's journey and growth trajectory.
+          </p>
+          <p>
+            Takeaway<br></br>
+            My takeaway from this project is the power of collaboration and meaningful symbolism in design. Working closely with the client allowed me to understand their values, goals, and aesthetic preferences, which were crucial in creating a logo that truly represents their brand identity. The process of translating abstract concepts like progress, growth, and unity into visual elements reinforced the importance of thoughtful design and effective communication. This project taught me the art of balancing creativity with functionality, ensuring that the final product not only looks appealing but also conveys a meaningful message that resonates with the audience.
+          </p>
+        </div>
+      ),
+    },
+    {
+      id: 3,
+      title: 'Misc. Freelance Projects',
+      imageUrl: '/assets/designprojects/miscfreelance/nhbeer.jpeg',
+      techStack: 'Software Used: Illustrator | InDesign',
+      descriptionImage: [
+        {
+          imageUrl: '/assets/designprojects/miscfreelance/nhbeer.jpeg',
+          caption: 'Sticker design for a beer content creator on Instagram',
+        },
+        {
+          imageUrl: '/assets/designprojects/miscfreelance/sumo.png',
+          caption: 'Illustration for a client’s personal brand',
+        },
+        {
+          imageUrl: '/assets/designprojects/miscfreelance/clssml.png',
+          caption: 'Business cards for an Etsy shop owner',
+        },
+      ],
+      description: (
+        <div className='project-description'>
+          <p>
+            A collection of other miscellaneous freelance projects that I’ve worked on.
+          </p>
+        </div>
+      ),
+    },
+    {
+      id: 4,
+      title: 'Misc. Personal Projects',
+      imageUrl: '/assets/designprojects/miscpersonal/jbl1.jpg',
+      techStack: 'Software Used: Illustrator | InDesign | Photoshop',
+      descriptionImage: [
+        {
+          imageUrl: '/assets/designprojects/miscpersonal/jbl1.jpg',
+          caption: 'JBL ad campaign 1/3',
+        },
+        {
+          imageUrl: '/assets/designprojects/miscpersonal/jbl2.jpg',
+          caption: 'JBL ad campaign 2/3',
+        },
+        {
+          imageUrl: '/assets/designprojects/miscpersonal/jbl3.jpg',
+          caption: 'JBL ad campaign 2/3',
+        },
+        {
+          imageUrl: '/assets/designprojects/miscpersonal/mob1.png',
+          caption: 'Concept home page design for Museum of Beer in San Diego',
+        },
+        {
+          imageUrl: '/assets/designprojects/miscpersonal/mob2.png',
+          caption: 'Concept exhibit page design for Museum of Beer in San Diego',
+        },
+        {
+          imageUrl: '/assets/designprojects/miscpersonal/spacejam.jpg',
+          caption: 'Redesigned Space Jam movie poster based on female leads',
+        },
+        {
+          imageUrl: '/assets/designprojects/miscpersonal/outofbounds.jpg',
+          caption: '“Out of Bounds” magazine spread based on “SLAM” magazine',
+        },
+        {
+          imageUrl: '/assets/designprojects/miscpersonal/luckylotus.png',
+          caption: 'Concept home page design for Lucky Lotus, a Vietnamese express restaurant',
+        },
+      ],
+      description: (
+        <div className='project-description'>
+          <p>
+            A collection of miscellaneous personal projects that I’ve enjoyed working on.
+          </p>
+        </div>
+      ),
+    },
+  ];
+
+
+
   const handleSeeMore = (projectId) => {
-    // Implement logic to open modal for the selected project
+    // Logic to open modal for the selected project
     console.log('See More clicked for project ID:', projectId);
   };
 
@@ -137,20 +327,40 @@ const Experience = () => {
         <main className="experience-main">
           <div className="experience-content-wrapper">
             <h1 className="experience-text-title">Experience</h1>
-            <div className="project-cards-container">
-              {projects.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  title={project.title}
-                  date={project.date}
-                  imageUrl={project.imageUrl}
-                  techStack={project.techStack}
-                  link={project.link}
-                  descriptionImage={project.descriptionImage}
-                  description={project.description}
-                  onClick={() => handleSeeMore(project.id)}
-                />
-              ))}
+            <div className="experience-subsection">
+              <p className="subsection-title">Software Development</p>
+              <div className="project-cards-container">
+                {developerProjects.map((project) => (
+                  <DeveloperProjectCard
+                    key={project.id}
+                    title={project.title}
+                    date={project.date}
+                    imageUrl={project.imageUrl}
+                    techStack={project.techStack}
+                    link={project.link}
+                    descriptionImage={project.descriptionImage}
+                    description={project.description}
+                    onClick={() => handleSeeMore(project.id)}
+                  />
+                ))}
+              </div>
+            </div>
+            
+            <div className="experience-subsection">
+              <p className="subsection-title">Graphic Design</p>
+              <div className="project-cards-container">
+                {designProjects.map((project) => (
+                  <DesignProjectCard
+                    key={project.id}
+                    title={project.title}
+                    imageUrl={project.imageUrl}
+                    techStack={project.techStack}
+                    descriptionImage={project.descriptionImage}
+                    description={project.description}
+                    onClick={() => handleSeeMore(project.id)}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </main>
