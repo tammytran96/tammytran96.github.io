@@ -3,11 +3,13 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensures the container takes up the full viewport height */
-  background-image: url('/public/portfoliobg.png');
+  background-image: url('/public/assets/portfoliobg.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+  /* color: #c2b59b; dark checkered color */
 
 .home-main {
   flex-grow: 1; /* Main content takes up remaining space */
@@ -25,10 +27,10 @@
   width: 60%;
 }
 
-.home-text-title {
+.section-text-title {
   font-size: 2rem;
-  /* color: #c2b59b; dark checkered color */
   color: #ed8b16;
+  /* color: #44624a; */
   font-family: 'Space Mono';
 }
 
@@ -116,7 +118,7 @@
   color: #44624a;
 }
 
-.close-button:hover, .nav-link:hover {
+.close-button:hover, .link:hover {
   color: #c2bb00;
 }
 
@@ -137,7 +139,7 @@
   display: flex;
 }
 
-.nav-link {
+.link {
   margin-right: 20px; /* Adjust spacing between links */
   font-family: 'Space Mono';
   font-size: .8rem;
@@ -145,10 +147,6 @@
   text-decoration: none; /* Remove underline */
   cursor: pointer;
 }
-
-/* .nav-link:hover {
-  color: #c2bb00;
-} */
 
 .icon {
   color: #c2bb00;
@@ -174,17 +172,10 @@
   padding: 30px;
 }
 
-.experience-content-wrapper {
+.section-content-wrapper {
   text-align: center;
   /* background-color: #c2b59b48; */
   padding: 20px;
-}
-
-.experience-text-title, .contact-text-title {
-  font-size: 2rem;
-  color: #ed8b16;
-  /* color: #44624a; */
-  font-family: 'Space Mono';
 }
 
 .experience-subsection {
@@ -294,20 +285,6 @@
   margin-bottom: 10px;
 }
 
-/* .see-more-button {
-  background-color: #44624a;
-  color: #f8ebd7;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.see-more-button:hover {
-  background-color: #c2bb00;
-} */
-
-
 /* Contact */
 .contact-container {
   display: flex;
@@ -323,33 +300,12 @@
   padding: 30px;
 }
 
-.contact-content-wrapper {
-  text-align: center;
-  /* background-color: #c2b59b48; */
-  padding: 20px;
-}
-
-/* .contact-text-title {
-  font-size: 2.25rem;
-  color: #ed8b16;
-  font-family: 'Space Mono';
-} */
-
 .contact-text-description {
-  font-size: 1rem;
+  font-size: .8rem;
   color: #544f44;
   font-family: 'Space Mono';
   text-align: left;
   text-decoration: none;
-}
-
-.pre-link {
-  color: #44624a;
-  text-decoration: none;
-}
-
-.pre-link:hover {
-  color: #c2bb00;
 }
 
 /* Footer */

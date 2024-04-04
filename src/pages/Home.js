@@ -18,7 +18,7 @@ const Home = () => {
       <div className="home-container">
         <main className="home-main">
           <div className="home-content-wrapper">
-            <h1 className="home-text-title">
+            <h1 className="section-text-title">
               tammyTran = ["developer", "designer"];
             </h1>
             <p className="home-text-description">

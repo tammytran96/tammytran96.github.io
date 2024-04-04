@@ -320,8 +320,8 @@ const Experience = () => {
     <div id="experience" className="section">
       <div className="experience-container">
         <main className="experience-main">
-          <div className="experience-content-wrapper">
-            <h1 className="experience-text-title">Experience</h1>
+          <div className="section-content-wrapper">
+            <h1 className="section-text-title">Experience</h1>
             <div className="experience-subsection">
               <p className="subsection-title">Software Development</p>
               <div className="project-cards-container">
