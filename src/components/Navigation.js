@@ -8,8 +8,8 @@ const Navigation = () => {
   return (
     <nav className="nav-container">
       <div className="nav-left">
-        <Link to="/" smooth={true} duration={500} className="link">["home",</Link>
-        <Link to="experience" smooth={true} duration={500} className="link">"experience",</Link>
+        {/* <Link to="/" smooth={true} duration={500} className="link">["home",</Link> */}
+        <Link to="experience" smooth={true} duration={500} className="link">["experience",</Link>
         <Link to="contact" smooth={true} duration={500} className="link">"contact"]</Link>
       </div>
       <div className="nav-right">

@@ -17,11 +17,11 @@ const DeveloperProjectCard = ({ title, date, imageUrl, techStack, link, descript
   return (
     <div className="project-card">
       <p className="project-title">{title}</p>
-      <p className="project-date">{date}</p>
+      <p className="project-details">{date}</p>
       <img src={imageUrl} alt={title} className="project-image" />
-      <p className="project-techstack">{techStack}</p>
-      <p className="project-link">
-        <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
+      <p className="project-details">{techStack}</p>
+      <p className="link">
+        <a href={link} target="_blank" rel="noopener noreferrer" className="link">{link}</a>
       </p>
       <button className="button" onClick={toggleModal}>
         See More...
@@ -34,10 +34,10 @@ const DeveloperProjectCard = ({ title, date, imageUrl, techStack, link, descript
         </div>
         <div className="modal-content">
           <p className="project-title">{title}</p>
-          <p className="project-date">{date}</p>
-          <p className="project-techstack">{techStack}</p>
-          <p className="project-link">
-            <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
+          <p className="project-details">{date}</p>
+          <p className="project-details">{techStack}</p>
+          <p className="link">
+            <a href={link} target="_blank" rel="noopener noreferrer" className="link">{link}</a>
           </p>
           <div className="image-gallery">
             <a href={descriptionImage[currentImageIndex]} target="_blank" rel="noopener noreferrer">
@@ -50,7 +50,7 @@ const DeveloperProjectCard = ({ title, date, imageUrl, techStack, link, descript
               </button>
             </div>
           </div>
-          <p className="project-description">{description}</p>
+          <p className="text-description">{description}</p>
         </div>
       </Modal>
     </div>

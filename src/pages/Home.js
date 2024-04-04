@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div id="home" className="section">
       <div className="home-container">
-        <main className="home-main">
+        <main className="section-main">
           <div className="home-content-wrapper">
             <h1 className="section-text-title">
               tammyTran = ["developer", "designer"];

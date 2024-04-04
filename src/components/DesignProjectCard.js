@@ -17,7 +17,7 @@ const DesignProjectCard = ({ title, imageUrl, techStack, descriptionImage, descr
   return (
     <div className="project-card">
       <p className="project-title">{title}</p>
-      <p className="project-techstack">{techStack}</p>
+      <p className="project-details">{techStack}</p>
       <img src={imageUrl} alt={title} className="project-image" />
       <button className="button" onClick={toggleModal}>
         See More...
@@ -30,7 +30,7 @@ const DesignProjectCard = ({ title, imageUrl, techStack, descriptionImage, descr
         </div>
         <div className="modal-content">
           <p className="project-title">{title}</p>
-          <p className="project-techstack">{techStack}</p>
+          <p className="project-details">{techStack}</p>
           <div className="image-gallery">
             <a href={descriptionImage[currentImageIndex].imageUrl} target="_blank" rel="noopener noreferrer">
               <img src={descriptionImage[currentImageIndex].imageUrl} alt={`Project ${title}`} className="project-gallery-image" />
@@ -43,7 +43,7 @@ const DesignProjectCard = ({ title, imageUrl, techStack, descriptionImage, descr
               </button>
             </div>
           </div>
-          <p className="project-description">{description}</p>
+          <p className="text-description">{description}</p>
         </div>
       </Modal>
     </div>

@@ -318,12 +318,12 @@ const Experience = () => {
 
   return (
     <div id="experience" className="section">
-      <div className="experience-container">
-        <main className="experience-main">
+      <div className="section-container">
+        <main className="section-main">
           <div className="section-content-wrapper">
             <h1 className="section-text-title">Experience</h1>
             <div className="experience-subsection">
-              <p className="subsection-title">Software Development</p>
+              <p className="subsection-title">SOFTWARE DEVELOPMENT</p>
               <div className="project-cards-container">
                 {developerProjects.map((project) => (
                   <DeveloperProjectCard
@@ -342,7 +342,7 @@ const Experience = () => {
             </div>
             
             <div className="experience-subsection">
-              <p className="subsection-title">Graphic Design</p>
+              <p className="subsection-title">GRAPHIC DESIGN</p>
               <div className="project-cards-container">
                 {designProjects.map((project) => (
                   <DesignProjectCard

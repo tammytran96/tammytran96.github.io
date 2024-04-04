@@ -1,43 +1,43 @@
-/* Home Styling */
-.home-container {
+/* dark checkered color: #c2b59b */
+/* light checkered color: #f8ebd7 */
+
+/* Section Container for Experience, Contact */
+.section-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensures the container takes up the full viewport height */
-  background-image: url('/public/assets/portfoliobg.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #f8ebd7;
 }
 
-  /* color: #c2b59b; dark checkered color */
-
-.home-main {
+/* Section Main for Home, Experience, Contact */
+.section-main {
   flex-grow: 1; /* Main content takes up remaining space */
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
+  padding: 30px;
 }
 
-.home-content-wrapper {
+/* Section Content Wrapper for Experience, Contact */
+.section-content-wrapper {
   text-align: center;
-  /* background-color: #f8ebd7; light checkered color */
-  background-color: #f8ebd7d2;
   padding: 20px;
-  border-radius: 5px;
-  width: 60%;
 }
 
+/* Sections Text Title Style For Home, About, Experience, Contact */
 .section-text-title {
   font-size: 2rem;
   color: #ed8b16;
-  /* color: #44624a; */
   font-family: 'Space Mono';
+  margin-top: 0px;
 }
 
-.home-text-description {
-  font-size: 1rem;
+/* Sections Text Description Style For About, Experience, Projects */
+.text-description {
   color: #544f44;
-  font-family: 'Space Mono';
+  font-family: 'Outfit';
+  font-size: .85rem;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 /* Buttons */
@@ -51,7 +51,6 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-
 }
 
 .button:hover {
@@ -60,7 +59,33 @@
   border-color: #f8ebd7;
 }
 
-/* About Me Modal */
+/* Home Styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+  background-image: url('/public/assets/portfoliobg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.home-content-wrapper {
+  text-align: center;
+  background-color: #f8ebd7d2;
+  padding: 20px;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.home-text-description {
+  color: #544f44;
+  font-family: 'Space Mono';
+  font-size: .85rem;
+  margin-bottom: 10px;
+}
+
+/* Modal */
 .ReactModal__Content {
   background-color: #f8ebd7 !important; 
   border: none !important;
@@ -94,22 +119,6 @@
   text-align: center;
 }
 
-.about-me-title {
-  font-size: 1.25rem;
-  margin-top: 0;
-  color: #ed8b16;
-}
-
-.about-me-image {
-  width: 500px;
-  height: auto;
-  border-radius: 2%;
-}
-
-.about-me-description {
-  font-size: .80rem;
-}
-
 .close-button {
   background: none;
   border: none;
@@ -120,6 +129,13 @@
 
 .close-button:hover, .link:hover {
   color: #c2bb00;
+}
+
+/* About Me */
+.about-me-image {
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
 }
 
 /* Navigation */
@@ -139,8 +155,9 @@
   display: flex;
 }
 
+/* Links */
 .link {
-  margin-right: 20px; /* Adjust spacing between links */
+  margin-right: 15px; /* Adjust spacing between links */
   font-family: 'Space Mono';
   font-size: .8rem;
   color: #44624a;
@@ -158,73 +175,46 @@
 }
 
 /* Experience */
-.experience-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #f8ebd7;
-}
-
-.experience-main {
-  flex-grow: 1; /* Main content takes up remaining space */
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  padding: 30px;
-}
-
-.section-content-wrapper {
-  text-align: center;
-  /* background-color: #c2b59b48; */
-  padding: 20px;
-}
-
 .experience-subsection {
   text-align: center;
   background-color: #c2b59b48;
   padding: 20px;
   bottom: 20px;
+  border-radius: 5px;
 }
 
 .subsection-title {
   font-size: 1.50rem;
   color: #44624a;
-  /* color: #ed8b16;; */
   font-family: 'Space Mono';
-}
-
-.experience-text-description {
-  /* font-size: 1rem; */
-  color: #544f44;
-  font-family: 'Space Mono';
-  text-decoration: none;
 }
 
 /* Project Cards */
 .project-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Adjust to fit 3 cards horizontally */
-  gap: 20px; /* Spacing between cards */
-  font-family: 'Space Mono';
+  gap: 20px; /* Space between cards */
   padding: 20px;
+  font-family: 'Outfit';
+  color: #544f44;
 }
 
 .project-card {
   background-color: #f8ebd7;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project-title {
   font-size: 1.25rem;
+  margin-top: 0px;
   margin-bottom: 5px;
-  color: #544f44;
 }
 
-.project-date, .project-techstack {
+.project-details {
   font-size: 0.75rem;
   margin-bottom: 10px;
-  color: #544f44;
 }
 
 .project-image {
@@ -232,24 +222,6 @@
   height: auto;
   border-radius: 4px;
   margin-bottom: 10px;
-}
-
-/* .project-techstack {
-  font-size: 0.75rem;
-  margin-bottom: 10px;
-} */
-
-/* NOT WORKING */
-.project-link {
-  color: #44624a;
-  text-decoration: none; /* Remove underline */
-  font-size: .75rem;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.project-link:hover {
-  color: #c2bb00;
 }
 
 .image-gallery {
@@ -268,6 +240,7 @@
   font-size: .60rem;
   font-style: italic;
   margin-bottom: 10px;
+  font-family: 'Outfit';
 }
 
 .image-navigation {
@@ -276,30 +249,7 @@
   margin-top: 10px;
 }
 
-.image-navigation button {
-  margin: 0 5px;
-}
-
-.project-description {
-  font-size: .80rem;
-  margin-bottom: 10px;
-}
-
 /* Contact */
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #f8ebd7;
-}
-
-.contact-main {
-  flex-grow: 1; /* Main content takes up remaining space */
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  padding: 30px;
-}
-
 .contact-text-description {
   font-size: .8rem;
   color: #544f44;
@@ -332,7 +282,7 @@
   background-color: #44624a;
   color: #f8ebd7;
   border: none;
-  /* border-radius: 50%; */
+  border-radius: 5px;
   cursor: pointer;
   padding: 10px;
   z-index: 1000;
@@ -353,105 +303,47 @@
 
 
 /* Media Queries for Responsive Design */
-/* Home */
 @media screen and (max-width: 768px) {
-  .home-main {
+  .content-main {
     padding: 15px;
   }
 
-  .home-text-title {
+  .section-text-title {
     font-size: 1.5rem;
   }
 
-  .home-text-description {
+  .section-text-description, .home-text-description, .contact-text-description, .icon, .link {
     font-size: 0.9rem;
   }
-}
 
-/* About */
-@media screen and (max-width: 768px) {
   .ReactModal__Content {
     width: 75%;
     max-width: none;
-  }
-
-  .about-me-title {
-    font-size: 1rem;
   }
 
   .about-me-image {
     max-width: 100%;
     height: auto;
   }
-  
-  .about-me-description {
-    font-size: 0.9rem;
-  }
-}
 
-/* Navigation */
-@media screen and (max-width: 768px) {
+  /* Navigation */
   .nav-container {
     flex-direction: column;
     padding: 3px 10px;
   }
 
-  .nav-link {
-    margin-right: 10px;
-    font-size: 0.9rem;
-  }
-
-  .icon {
-    font-size: 0.9rem;
-  }
-}
-
-/* Experience */
-@media screen and (max-width: 768px) {
-  .experience-main {
-    padding: 15px; 
-  }
-
-  .experience-text-title {
-    font-size: 1.5rem; 
-  }
-
-  .experience-text-description {
-    font-size: 0.9rem;
-  }
-  
+  /* Experience Subsection */
   .subsection-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
-}
 
-/* Project Cards */
-@media screen and (max-width: 768px) {
+  /* Project Cards */
   .project-cards-container {
     display: flex;
     flex-direction: column;
   }
 
-  .project-card {
-    margin-bottom: 20px;
-  }
-
   .project-title {
     font-size: 1rem;
-  }
-}
-
-/* Contact */
-@media screen and (max-width: 768px) {
-  .contact-main {
-    padding: 15px;
-  }
-
-  .contact-text-title {
-    font-size: 1.5rem;
-  }
-
-  .contact-text-description {
-    font-size: 0.9rem;
   }
 }

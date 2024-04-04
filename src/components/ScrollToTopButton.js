@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
       onClick={scrollToTop}
       title="Go to top"
     >
-      <span>&#9650;</span> {/* Unicode for an upward arrow */}
+      <span>&#9650;</span>
     </button>
   );
 };

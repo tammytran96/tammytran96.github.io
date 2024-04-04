@@ -10,8 +10,8 @@ const letsConnectText = `let'sConnect = {
 const Contact = () => {
   return (
     <div id="contact" className="section">
-      <div className="contact-container">
-        <main className="contact-main">
+      <div className="section-container">
+        <main className="section-main">
           <div className="section-content-wrapper">
             <h1 className="section-text-title">
               Contact
