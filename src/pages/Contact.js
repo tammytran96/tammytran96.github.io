@@ -14,7 +14,7 @@ const Contact = () => {
         <main className="contact-main">
           <div className="contact-content-wrapper">
             <h1 className="contact-text-title">
-              "Contact"
+              Contact
             </h1>
             <p className="contact-text-description">
             <pre dangerouslySetInnerHTML={{ __html: letsConnectText }} />

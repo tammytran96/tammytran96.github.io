@@ -24,7 +24,7 @@ const Home = () => {
             <p className="home-text-description">
               // full-stack developer and designer from California who is passionate about learning, exploring new ideas, and is actively seeking roles that align with my values and expertise. 
             </p>
-            <button className="about-me-button" onClick={openModal}>About Me</button>
+            <button className="button" onClick={openModal}>About Me</button>
             <AboutMeModal isOpen={isModalOpen} handleClose={closeModal} />
           </div>
         </main>

@@ -32,12 +32,11 @@ const Experience = () => {
             Furthermore, I played a pivotal role in improving developer documentation. By crafting detailed and user-friendly instructions, I facilitated clear communication and minimized support requests for clarification, thereby enhancing overall project efficiency and collaboration.
           </p>
           <p>
-            Achievements/Impact
-            <br></br>
+            <b>Achievements/Impact</b><br></br>
             Successfully restructured the codebase to an organized state, enabling the senior team to seamlessly implement new client-requested features without disruptions. Implemented comprehensive testing protocols to ensure optimal site functionality and user experience.
           </p>
           <p>
-            Takeaway<br></br>
+            <b>Takeaway</b><br></br>
             My internship reinforced the critical importance of establishing a solid foundation and structured approach when building a website. Adhering to best practices from the outset is key to scalability and avoiding reactive measures as the site expands. Emphasizing proactivity over reactivity whenever feasible is crucial for long-term success.
           </p>
         </div>
@@ -72,13 +71,11 @@ const Experience = () => {
             Throughout the internship, I actively participated in daily code reviews, engaging in collaborative feedback sessions where I not only received valuable insights on improving my code but also contributed to enhancing the overall codebase through thoughtful reviews of my teammates' code. This dedication to maintaining code integrity and fostering a culture of continuous improvement underscores my commitment to delivering high-quality contributions and driving excellence in software development practices.
           </p>
           <p>
-            Achievements/Impact
-            <br></br>
+            <b>Achievements/Impact</b><br></br>
             Collaborated with a cross-functional team and stakeholders to successfully deliver assigned projects ahead of schedule, and effectively delivered and closed over 38 tickets, with 154 commits made, 118 files modified, and 3,252 lines of code added across 4 repositories, showcasing strong productivity and technical proficiency
           </p>
           <p>
-            Takeaway
-            <br></br>
+            <b>Takeaway</b><br></br>
             During my internship, I gained invaluable insights into the intricacies of software development within a professional environment. It was a transformative experience where I delved into the end-to-end process of developing new features, from planning stages to coding best practices, including creating, merging, and updating branches. I navigated through merge conflicts, honing my problem-solving skills and deepening my understanding of version control systems.
           </p>
           <p>
@@ -113,13 +110,11 @@ const Experience = () => {
             Additionally, I supported team members by overseeing task allocation and planning, conducting thorough code reviews, and addressing technical challenges proactively. This meticulous approach resulted in the delivery of a high-quality product that not only met user expectations but also exceeded them, fulfilling the project's objectives effectively.
           </p>
           <p>
-            Achievements/Impact
-            <br></br>
+            <b>Achievements/Impact</b><br></br>
             We not only completed the project within the designated timeframe but also enjoyed the collaborative process. I was fortunate to collaborate with a cohesive team that fostered a friendly and supportive work environment, resulting in a group of teammates who became friends.
           </p>
           <p>
-            Takeaway
-            <br></br>
+            <b>Takeaway</b><br></br>
             This project underscored the paramount importance of constant and clear communication within a team. While we were passionate about the project's mission and eager to add extra features, we remained focused on achieving the MVP (minimal viable product) as the crucial initial milestone. This experience reinforced the value of prioritization and staying aligned with project objectives.
           </p>
         </div>
@@ -133,7 +128,7 @@ const Experience = () => {
       id: 1,
       title: 'Graceful Fleurs Logo',
       imageUrl: '/assets/designprojects/gf/gflogoblack.png',
-      techStack: 'Software Used: Illustrator | InDesign | Photoshop',
+      techStack: 'Software Used: Illustrator, InDesign, Photoshop',
       descriptionImage: [
         {
           imageUrl: '/assets/designprojects/gf/gflogoblack.png',
@@ -178,7 +173,7 @@ const Experience = () => {
             The success of the logo is reflected in the product's performance on Amazon, boasting an impressive rating of over 4.5/5 stars based on more than 400 ratings, a testament to its appeal and resonance with the target audience.
           </p>
           <p>
-            Takeaway<br></br>
+            <b>Takeaway</b><br></br>
             My takeaway from this project underscores the significance of understanding a client's vision and translating it into a compelling visual identity. Collaborating closely with the client allowed me to capture the essence of romance and luxury, key elements of their brand identity, in the logo design. The iterative design process, from mood boards to mockups, emphasized the importance of feedback and refinement in achieving a design that not only met but exceeded the client's expectations.
           </p>
           <p>
@@ -194,7 +189,7 @@ const Experience = () => {
       id: 2,
       title: 'Genesys MPC Logo',
       imageUrl: '/assets/designprojects/genesys/genesyslogo.png',
-      techStack: 'Software Used: InDesign | Illustrator | Photoshop',
+      techStack: 'Software Used: InDesign, Illustrator, Photoshop',
       descriptionImage: [
         {
           imageUrl: '/assets/designprojects/genesys/genesyslogo.png',
@@ -232,7 +227,7 @@ const Experience = () => {
             The color palette was meticulously crafted to complement the logo and reflect the brand's identity. Shades of green, mirroring the leaf's evolving hues in the logo, symbolize the company's journey and growth trajectory.
           </p>
           <p>
-            Takeaway<br></br>
+            <b>Takeaway</b><br></br>
             My takeaway from this project is the power of collaboration and meaningful symbolism in design. Working closely with the client allowed me to understand their values, goals, and aesthetic preferences, which were crucial in creating a logo that truly represents their brand identity. The process of translating abstract concepts like progress, growth, and unity into visual elements reinforced the importance of thoughtful design and effective communication. This project taught me the art of balancing creativity with functionality, ensuring that the final product not only looks appealing but also conveys a meaningful message that resonates with the audience.
           </p>
         </div>
@@ -242,7 +237,7 @@ const Experience = () => {
       id: 3,
       title: 'Misc. Freelance Projects',
       imageUrl: '/assets/designprojects/miscfreelance/nhbeer.jpeg',
-      techStack: 'Software Used: Illustrator | InDesign',
+      techStack: 'Software Used: Illustrator, InDesign',
       descriptionImage: [
         {
           imageUrl: '/assets/designprojects/miscfreelance/nhbeer.jpeg',
@@ -269,7 +264,7 @@ const Experience = () => {
       id: 4,
       title: 'Misc. Personal Projects',
       imageUrl: '/assets/designprojects/miscpersonal/jbl1.jpg',
-      techStack: 'Software Used: Illustrator | InDesign | Photoshop',
+      techStack: 'Software Used: Illustrator, InDesign, Photoshop',
       descriptionImage: [
         {
           imageUrl: '/assets/designprojects/miscpersonal/jbl1.jpg',

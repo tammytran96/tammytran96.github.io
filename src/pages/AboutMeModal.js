@@ -13,10 +13,10 @@ const AboutMeModal = ({ isOpen, handleClose }) => {
         </button>
       </div>
       <div className="modal-content">
-        <h2 className="about-me-title">About Me</h2>
+        <h2 className="about-me-title">Hi, my name is Tammy, and welcome to my portfolio!</h2>
         <img src="/assets/aboutme.png" alt="About Me" className="about-me-image"/>
         <div className="about-me-description">
-          <p>Hi, my name is Tammy, and welcome to my portfolio! I’m a full-stack developer and designer from San Diego, California, passionate about learning, exploring new ideas, and solving problems!</p>
+          <p>I’m a full-stack developer and designer from San Diego, California, passionate about learning, exploring new ideas, and solving problems!</p>
           <p>Growing up, I've always enjoyed expressing my creativity through drawing, painting, and crafting with ceramics, paper mache, and wood. As I’ve gotten older, I realized that I developed into being more technical-minded with a curiosity about how things work. Combining these interests, I pursued education in graphic design and software development, in addition to earning my sociology degree.</p>
           <p>In addition to my 6 years of professional experience in program management and administration, I've actively pursued various real-world projects aligned with my interests outside of my primary work responsibilities. These projects have included designing logos for clients, collaborating on UX/UI design and development for a larger-scale website, expanding APIs, and contributing to the development of a web application within a team setting.</p>
           <p>I am proficient in multiple programming languages and frameworks, such as JavaScript, React, HTML, CSS, and Ruby, handling both frontend and backend development tasks. Additionally, I am skilled in design software like Adobe Creative Cloud. I'm a quick learner, adapting to new programming languages as needed for project requirements. My sociology background complements my technical skills by providing insights into human behavior and social interactions, influencing the design of user-friendly products.</p>
