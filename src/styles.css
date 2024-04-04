@@ -75,7 +75,7 @@
   background-color: #f8ebd7d2;
   padding: 20px;
   border-radius: 5px;
-  width: 60%;
+  width: 55%;
 }
 
 .home-text-description {
@@ -132,11 +132,7 @@
 }
 
 /* About Me */
-.about-me-image {
-  width: 500px;
-  height: auto;
-  border-radius: 5px;
-}
+
 
 /* Navigation */
 .nav-container {
@@ -187,6 +183,8 @@
   font-size: 1.50rem;
   color: #44624a;
   font-family: 'Space Mono';
+  text-decoration: underline;
+  margin-bottom: 0px;
 }
 
 /* Project Cards */
@@ -217,8 +215,8 @@
   margin-bottom: 10px;
 }
 
-.project-image {
-  width: 80%;
+.project-image, .about-me-image {
+  width: 85%;
   height: auto;
   border-radius: 4px;
   margin-bottom: 10px;

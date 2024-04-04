@@ -309,8 +309,6 @@ const Experience = () => {
     },
   ];
 
-
-
   const handleSeeMore = (projectId) => {
     // Logic to open modal for the selected project
     console.log('See More clicked for project ID:', projectId);
