@@ -47,7 +47,7 @@
   font-family: 'Space Mono';
   font-size: .75rem;
   padding: 8px 16px;
-  border: 2px solid #f8ebd7;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -56,7 +56,7 @@
 .button:hover {
   background-color: #c2bb00;
   color: #f8ebd7;
-  border-color: #f8ebd7;
+  border: none;
 }
 
 /* Home Styling */
@@ -82,6 +82,13 @@
   color: #544f44;
   font-family: 'Space Mono';
   font-size: .85rem;
+  margin-bottom: 10px;
+}
+
+.about-me-image {
+  width: 85%;
+  height: auto;
+  border-radius: 4px;
   margin-bottom: 10px;
 }
 
@@ -131,11 +138,10 @@
   color: #c2bb00;
 }
 
-/* About Me */
-
-
 /* Navigation */
 .nav-container {
+  max-width: 100%;
+  margin: 0 auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -172,6 +178,8 @@
 
 /* Experience */
 .experience-subsection {
+  max-width: 100%;
+  margin: 0 auto;
   text-align: center;
   background-color: #c2b59b48;
   padding: 20px;
@@ -189,6 +197,9 @@
 
 /* Project Cards */
 .project-cards-container {
+  max-width: 100%;
+  margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Adjust to fit 3 cards horizontally */
   gap: 20px; /* Space between cards */
@@ -198,6 +209,9 @@
 }
 
 .project-card {
+  max-width: 100%;
+  margin: 0 auto;
+
   background-color: #f8ebd7;
   padding: 20px;
   border-radius: 5px;
@@ -220,6 +234,7 @@
   height: auto;
   border-radius: 4px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .image-gallery {
@@ -229,8 +244,7 @@
 .project-gallery-image {
   max-width: 100%;
   height: auto;
-  /* max-width: auto;
-  height: 50px; */
+  max-height: calc(100vh - 400px);
   cursor: pointer;
 }
 
@@ -302,8 +316,12 @@
 
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
-  .content-main {
+  .section-main {
     padding: 15px;
+  }
+
+  .experience-subsection {
+    padding: 5px;
   }
 
   .section-text-title {
@@ -339,6 +357,11 @@
   .project-cards-container {
     display: flex;
     flex-direction: column;
+    padding: 5px;
+  }
+  
+  .project-card {
+    padding: 5px;
   }
 
   .project-title {

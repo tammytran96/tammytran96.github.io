@@ -337,9 +337,7 @@ const Experience = () => {
                   />
                 ))}
               </div>
-            </div>
             
-            <div className="experience-subsection">
               <p className="subsection-title">GRAPHIC DESIGN</p>
               <div className="project-cards-container">
                 {designProjects.map((project) => (
@@ -355,6 +353,7 @@ const Experience = () => {
                 ))}
               </div>
             </div>
+
           </div>
         </main>
       </div>

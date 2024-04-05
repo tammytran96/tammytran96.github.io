@@ -14,11 +14,19 @@ const DesignProjectCard = ({ title, imageUrl, techStack, descriptionImage, descr
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % descriptionImage.length);
   };
 
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + descriptionImage.length) % descriptionImage.length);
+  };
+
+  const openModalOnImageClick = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <div className="project-card">
       <p className="project-title">{title}</p>
       <p className="project-details">{techStack}</p>
-      <img src={imageUrl} alt={title} className="project-image" />
+      <img src={imageUrl} alt={title} className="project-image" onClick={openModalOnImageClick} />
       <button className="button" onClick={toggleModal}>
         See More...
       </button>
@@ -38,6 +46,9 @@ const DesignProjectCard = ({ title, imageUrl, techStack, descriptionImage, descr
             <p className="image-caption">{descriptionImage[currentImageIndex].caption}</p>
             <p className="image-caption">*Click image to enlarge</p>
             <div className="image-navigation">
+              <button className="button" onClick={prevImage}>
+                <span>&larr;</span>
+              </button>
               <button className="button" onClick={nextImage}>
                 <span>&rarr;</span>
               </button>

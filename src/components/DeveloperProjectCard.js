@@ -14,11 +14,19 @@ const DeveloperProjectCard = ({ title, date, imageUrl, techStack, link, descript
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % descriptionImage.length);
   };
 
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + descriptionImage.length) % descriptionImage.length);
+  };
+
+  const openModalOnImageClick = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <div className="project-card">
       <p className="project-title">{title}</p>
       <p className="project-details">{date}</p>
-      <img src={imageUrl} alt={title} className="project-image" />
+      <img src={imageUrl} alt={title} className="project-image" onClick={openModalOnImageClick} />
       <p className="project-details">{techStack}</p>
       <p className="link">
         <a href={link} target="_blank" rel="noopener noreferrer" className="link">{link}</a>
@@ -45,6 +53,9 @@ const DeveloperProjectCard = ({ title, date, imageUrl, techStack, link, descript
             </a>
             <p className="image-caption">*Click image to enlarge</p>
             <div className="image-navigation">
+              <button className="button" onClick={prevImage}>
+                <span>&larr;</span>
+              </button>
               <button className="button" onClick={nextImage}>
                 <span>&rarr;</span>
               </button>
