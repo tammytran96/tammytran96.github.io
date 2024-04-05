@@ -86,7 +86,7 @@
 }
 
 .about-me-image {
-  width: 85%;
+  width:100%;
   height: auto;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -229,7 +229,7 @@
   margin-bottom: 10px;
 }
 
-.project-image, .about-me-image {
+.project-image {
   width: 85%;
   height: auto;
   border-radius: 4px;
